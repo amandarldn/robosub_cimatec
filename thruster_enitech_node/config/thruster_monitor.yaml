@@ -1,0 +1,31 @@
+ThrusterMonitor:
+  ros__parameters:
+    dead_zone: 100
+    error_time_filter: 20000000
+    moving_average_time: 5000000
+    tolerance: 0.5
+    thruster_timeout: 1000000
+    periodic_update: 100000
+    thruster_node_name: "ThrusterMonitor"
+    samples_threshold: 5
+
+    thrusters:
+      - name: "heave_front"
+        id: 17
+        frame: "flatfish/heave_front"
+      - name: "heave_rear"
+        id: 13
+        frame: "flatfish/heave_rear"
+      - name: "surge_left"
+        id: 19
+        frame: "flatfish/surge_left"
+      - name: "surge_right"
+        id: 16
+        frame: "flatfish/surge_right"
+      - name: "sway_front"
+        id: 14
+        frame: "flatfish/sway_front"
+      - name: "sway_rear"
+        id: 15
+        frame: "flatfish/sway_rear"
+    

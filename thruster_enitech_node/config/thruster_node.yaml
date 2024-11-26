@@ -1,0 +1,32 @@
+ThrusterNode:
+  ros__parameters:
+    device: can1
+    periodic_update: 100000
+    sdo_timeout: 1000000
+    reset_timeout: 2000000
+    start_timeout: 500000
+    stop_timeout: 500000
+    status_timeout: 5000000
+    heartbeat_period: 2000000
+    update_period: 100000
+    temperature_period: 1000000
+
+    thrusters:
+      - name: "heave_front"
+        id: 17
+        frame: "flatfish/heave_front"
+      - name: "heave_rear"
+        id: 13
+        frame: "flatfish/heave_rear"
+      - name: "surge_left"
+        id: 19
+        frame: "flatfish/surge_left"
+      - name: "surge_right"
+        id: 16
+        frame: "flatfish/surge_right"
+      - name: "sway_front"
+        id: 14
+        frame: "flatfish/sway_front"
+      - name: "sway_rear"
+        id: 15
+        frame: "flatfish/sway_rear"

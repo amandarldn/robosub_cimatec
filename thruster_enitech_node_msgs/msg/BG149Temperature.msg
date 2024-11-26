@@ -1,0 +1,3 @@
+uint8 probe_id
+uint8 temp_in_degrees
+builtin_interfaces/Time last_update

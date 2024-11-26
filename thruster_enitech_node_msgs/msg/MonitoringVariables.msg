@@ -1,0 +1,7 @@
+float64 tracking_error
+float64 command_moving_average
+uint8 command_samples
+float64 status_moving_average
+uint8 status_samples
+builtin_interfaces/Duration elapsed_time
+builtin_interfaces/Time time
